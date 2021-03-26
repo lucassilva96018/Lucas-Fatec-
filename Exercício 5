@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+  int main(void) {
+  float e_altura, s_pesoideal;
+  int e_escolhadosexo;
+
+  printf("Calculadora de peso ideal\n");
+  printf("Entre com o valor da altura: ");
+  scanf("%f", &e_altura);
+
+  printf("Qual é o sexo do paciente: \n ");
+  printf("0 - Feminino\n");
+  printf("1 - Masculino\n");
+  scanf("%i", &e_escolhadosexo);
+
+  switch (e_escolhadosexo){
+  case 0: s_pesoideal = (62.1 * e_altura) - 44.7;
+  printf("Resultado: %f.\n", s_pesoideal);
+  break;
+  case 1: s_pesoideal = (72.7 * e_altura) - 58;
+  printf("Resultado: %f.\n",s_pesoideal);
+  break; 
+}
+return 0;
+}
