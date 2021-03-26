@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(void) {
+  float R_1, R_2, R_3, R_4, R_1e2, R_3e4, R_Eq;
+
+ printf("Entre com o valor do Resistor 1: ");
+ scanf("%f", &R_1);
+
+printf("Entre com o valor do Resistor 2: ");
+scanf("%f", &R_2);
+
+printf("Entre com o valor do Resistor 3: ");
+scanf("%f", &R_3);
+
+printf("Entre com o valor do Resistor 4: ");
+scanf("%f",&R_4);
+
+R_1e2 = (R_1 * R_2)  /  (R_1 + R_2);
+
+printf("Resultado da soma dos resistores: %.2f\n ", R_1e2);
+
+R_3e4 = (R_3 * R_4)  /  (R_3 + R_4);
+
+printf("Resultado da soma dos resistores: %.2f\n ", R_3e4);
+
+R_Eq = (R_1e2 * R_3e4) / (R_1e2 + R_3e4);
+
+printf("Resultado da soma dos resistores: %.2f\n ", R_Eq);
+
+  return 0;
+}
